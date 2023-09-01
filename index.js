@@ -18,6 +18,10 @@ mongoose
     console.error(`Error in connecting to the database: ${err}`);
   });
 
+  
+
+
+
 app.get("/", (req, res) => {
   res.send("heyy balak");
 });
