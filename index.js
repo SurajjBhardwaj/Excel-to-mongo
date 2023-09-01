@@ -18,8 +18,8 @@ mongoose
     console.error(`Error in connecting to the database: ${err}`);
   });
 
-  
-
+const userRoute = require('./routes/userRoutes');
+app.use('/', userRoute);
 
 
 app.get("/", (req, res) => {
